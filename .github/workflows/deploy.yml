@@ -18,7 +18,7 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           REMOTE_HOST: 92.205.249.36
           REMOTE_USER: y8qa668nyisj
-          REMOTE_PORT: 65002
+          REMOTE_PORT: 2083
           TARGET: /home/y8qa668nyisj/public_html/app.dcnglobalexhibitions.com
           SOURCE: ./
           ARGS: "-avz --exclude='.env' --exclude='.env.*' --exclude='.git'"
