@@ -27,7 +27,7 @@
 							</div>
 							<div class="start-top">
 								<div class="social-header">
-									<span>Follow Us On:</span>
+									<span>Follow Us On digital platform:</span>
 									<ul>
 										<li><a href="javascript:void(0)"><i class="fa-brands fa-facebook-f"></i></a></li>
 										<li><a href="https://www.linkedin.com/company/102462139/admin/dashboard/"><i class="fa-brands fa-linkedin-in"></i></a></li>
@@ -58,8 +58,8 @@
 											@isset($globals)
 												@foreach($globals as $global)
 													<li><a href="{{ route('global-presence',$global->slug) }}">{{ $global->name ?? '' }}</a></li>
-												@endforeach 
-											@endisset											
+												@endforeach
+											@endisset
 										</ul>
 									</li>
 									<li class="main-nav has-dropdown project-a-after">
@@ -69,8 +69,8 @@
 											@isset($exhibitions)
 												@foreach($exhibitions as $exhibition)
 													<li><a href="{{ url('exhibition',$exhibition->slug) }}">{{ $exhibition->title ?? '' }}</a></li>
-												@endforeach 
-											@endisset												
+												@endforeach
+											@endisset
 										</ul>
 									</li>
 									<li class="main-nav"><a href="{{ route('contact') }}">Contact</a></li>
@@ -161,8 +161,8 @@
 											@isset($globals)
 												@foreach($globals as $global)
 													<li><a href="{{ route('global-presence',$global->slug) }}">{{ $global->name ?? '' }}</a></li>
-												@endforeach 
-											@endisset											
+												@endforeach
+											@endisset
 										</ul>
 									</li>
 									<li class="main-nav has-dropdown project-a-after">
@@ -172,7 +172,7 @@
 											@isset($exhibitions)
 												@foreach($exhibitions as $exhibition)
 													<li><a href="{{ url('exhibition',$exhibition->slug) }}">{{ $exhibition->title ?? '' }}</a></li>
-												@endforeach 
+												@endforeach
 											@endisset
 										</ul>
 									</li>
@@ -182,7 +182,7 @@
 							<!-- nav-area end -->
 							<!-- header style two End -->
 							<div class="right-area">
-								
+
 								<a href="{{ route('get-a-quote') }}" class="rts-btn btn-header btn-transparent">Get a Quote
 									<img src="{{ asset('front/images/arrow-up-right.svg') }}" alt="arrow">
 								</a>
