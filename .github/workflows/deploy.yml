@@ -8,6 +8,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -18,11 +19,11 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           REMOTE_HOST: 92.205.249.36
           REMOTE_USER: y8qa668nyisj
-          REMOTE_PORT: 2083
+          REMOTE_PORT: 22
           TARGET: /home/y8qa668nyisj/public_html/app.dcnglobalexhibitions.com
           SOURCE: ./
           ARGS: "-avz --exclude='.env' --exclude='.env.*' --exclude='.git'"
-          REMOTE_COMMAND: |
+          SCRIPT_AFTER: |
             cd /home/y8qa668nyisj/public_html/app.dcnglobalexhibitions.com
             php artisan cache:clear
             php artisan config:clear
